@@ -27,22 +27,21 @@ Number.isInteger(fritz);
 
 console.log(fritz)
 
-if( Number.isInteger(fritz) == true ){
-  arraynumber.push("fritz");
 
- if(Number.isInteger(buzz) == true){
-   arraynumber.push("buzz");
+ if((Number.isInteger(fritz) ) && (Number.isInteger(buzz) ) ){
+   arraynumber.push("fritzbuzz");
+ } else if(Number.isInteger(fritz) ) {
+   arraynumber.push("fritz");
+ } else if(Number.isInteger(buzz) ) {
+   arraynumber.push("buzz")
  }
- if((Number.isInteger(fritz) == true) && (Number.isInteger(buzz) == true) ){
-   arraynumber.push("fritzbuzz")
- }
-
-}
 
 
 
 
-console.log(arraynumber)
+
+
+console.log(arraynumber);
 
 
 // for(var i = 0; i <= 19; i++){
