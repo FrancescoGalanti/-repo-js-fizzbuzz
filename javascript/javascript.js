@@ -8,25 +8,53 @@
 
 var arraynumber = [];
 
-// var number = Math.floor(Math.random() * 100) + 1;
+// var numt = 5 / 3;
+// console.log(numt);
 
+var number = Math.floor(Math.random() * 100) + 1;
+console.log(number);
 
-for(var i = 0; i <= 19; i++){
-    var number = Math.floor(Math.random() * 100) + 1;
+var fritz = number / 3;
 
-    if(number % 3 == 0){
-      arraynumber.push("Fizz");
+var buzz = number / 5;
 
-    }if(number % 5 == 0){
-          arraynumber.push("Buzz");
-        }
-     if((number % 5 == 0) && (number % 3)){
-          arraynumber.push("FizzBuzz");
-     }else{
-          arraynumber.push(number);
-     }
+console.log(fritz);
 
+Number.isInteger(fritz);
 
+console.log(fritz)
+
+if( Number.isInteger(fritz) ){
+  arraynumber.push("fritz");
+}
+else if(Number.isInteger(buzz)){
+  arraynumber.push("buzz");
+}
+
+else if((Number.isInteger(fritz)) && (Number.isInteger(buzz)) ){
+   arraynumber.push("fritzbuzz")
 }
 
 console.log(arraynumber)
+
+
+// for(var i = 0; i <= 19; i++){
+//     var number = Math.floor(Math.random() * 100) + 1;
+//
+//     if((number % 3) == (Number.isInteger(number)){
+//       arraynumber.push("Fizz");
+//
+//     }
+//     if((number % 5) == (isInteger(number)){
+//           arraynumber.push("Buzz");
+//         }
+//      if((number  % 5 == number.isInteger()) && (number % 3 == number.isInteger())){
+//           arraynumber.push("FizzBuzz");
+//      }else{
+//           arraynumber.push(number);
+//      }
+//
+//
+// }
+//
+// console.log(arraynumber)
