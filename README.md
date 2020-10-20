@@ -1,1 +1,1 @@
-repo js-fizzbuzz
+js-pwdgen-wannabe
