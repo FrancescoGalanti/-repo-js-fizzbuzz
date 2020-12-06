@@ -4,72 +4,58 @@
 
 
 
-//  prima variabile //
-
-var arraynumber = [];
-
-// var numt = 5 / 3;
-// console.log(numt);
-
-// var number = Math.floor(Math.random() * 100) + 1;
-// console.log(number);
-//
-// var fritz = number / 3;
-//
-// var buzz = number / 5;
-//
-//
-//
-// console.log(fritz);
-//
-//
-// Number.isInteger(fritz);
-//
-// console.log(fritz)
-//
-//
-//  if((Number.isInteger(fritz) ) && (Number.isInteger(buzz) ) ){
-//    arraynumber.push("fritzbuzz");
-//  } else if(Number.isInteger(fritz) ) {
-//    arraynumber.push("fritz");
-//  } else if(Number.isInteger(buzz) ) {
-//    arraynumber.push("buzz")
-//  }
-
-
-// if((number % 3 === 0)){
-//   arraynumber.push("Fizz");
+let array = generaterandomNumber()
 
 
 
 
-console.log(arraynumber);
 
 
-for(var i = 1; i <= 100; i++){
-    var number = Math.floor(Math.random() * 100) + 1;
 
-    while( arraynumber.includes(number)){
 
-       var number =  Math.floor(Math.random() * 100) + 1;
-    }
 
-    console.log(number)
 
-    if((number  % 5 === 0) && (number % 3 === 0)){
-          arraynumber.push("FizzBuzz");
-      } else if(number % 5 === 0){
-          arraynumber.push("Fizz");
-      } else if(number % 3 === 0){
-          arraynumber.push("buzz");
-      } else{
-          arraynumber.push(number);
+
+
+
+  array =  array.map(element =>{
+
+     if((element  % 5 === 0) && (element % 3 === 0)){
+         return element = "fizzbuz"
+     } else if(element % 5 === 0){
+          return element = "fizz"
+     } else if(element % 3 === 0){
+          return element = "buzz"
+     } else{
+          return element
       }
 
+});
 
 
 
+
+
+
+
+console.log(array)
+
+
+function generaterandomNumber(){
+    var element = [];
+
+    for(var i = 0; i < 100; i++){
+      var numero= Math.floor(Math.random() * 100) + 1;
+
+      while(element.includes(numero)){
+
+       var numero =  Math.floor(Math.random() * 100) + 1;
+      }
+
+       element.push(numero)
+
+ }
+
+ return element
 
 }
-
-console.log(arraynumber)
