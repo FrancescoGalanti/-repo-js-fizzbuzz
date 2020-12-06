@@ -48,6 +48,12 @@ console.log(arraynumber);
 
 for(var i = 1; i <= 100; i++){
     var number = Math.floor(Math.random() * 100) + 1;
+
+    while( arraynumber.includes(number)){
+
+       var number =  Math.floor(Math.random() * 100) + 1;
+    }
+
     if((number  % 5 === 0) && (number % 3 === 0)){
           arraynumber.push("FizzBuzz");
       } else if(number % 5 === 0){
@@ -57,6 +63,7 @@ for(var i = 1; i <= 100; i++){
       } else{
           arraynumber.push(number);
       }
+
 
 
 
