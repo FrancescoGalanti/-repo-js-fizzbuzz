@@ -54,6 +54,8 @@ for(var i = 1; i <= 100; i++){
        var number =  Math.floor(Math.random() * 100) + 1;
     }
 
+    console.log(number)
+
     if((number  % 5 === 0) && (number % 3 === 0)){
           arraynumber.push("FizzBuzz");
       } else if(number % 5 === 0){
